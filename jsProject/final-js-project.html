@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            margin: 0;
+            background-color: lightskyblue;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1
+        {
+            font-family: 'Fredoka One', cursive;
+            font-size: 70px;
+            color: rgb(233, 233, 27);
+            text-shadow:0px 0px 5px black;
+            padding-top: 100px;
+            animation: 1s infinite alternate ease-in-out tilt;
+        }
+        @keyframes tilt
+        {
+            0%
+            {
+                transform: rotate(2deg);
+            }
+            100%
+            {
+                transform: rotate(-2deg);
+            }
+        }
+        aside
+        {
+            display: flex;
+            justify-content: center;
+            flex-flow: row-;
+        }
+        div
+        {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            margin: 10px;
+            margin-top: 20vh;
+            border-radius: 8px;
+        }
+        div:nth-of-type(even)
+        {
+            background-color: rgb(21, 21, 59);
+        }
+        div:nth-of-type(odd)
+        {
+            background-color: rgb(233, 233, 27);
+        }
+        div:nth-of-type(odd) p
+        {
+            color: rgb(21, 21, 59);
+        }
+        p
+        {
+            padding-top: 40%;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(233, 233, 27);
+            font-size: 30px;
+            padding-right: 40px;
+            padding-left: 40px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <aside style="width: 100px; position: fixed;top: 100px; cursor: pointer; z-index: 9;">
+        <a href="../index.html">
+            <img style="width: 100px; background-color: white;" src="https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png" alt="home">
+        </a>
+    </aside>
+    <h1>JavaScript Assessment</h1>
+    <aside>
+        <div id="quiz">
+            <p>Quiz App</p>
+        </div>
+        <div id="watch">
+            <p>Watch Page</p>
+        </div>
+        <div id="form">
+            <p>Multi-Step Form</p>
+        </div>
+    </aside>
+    <script>
+        var page1=document.getElementById('quiz')
+        page1.onclick=function()
+        {
+            location.href=("/jsProject/quiz-app.html")
+        }
+        var page2=document.getElementById('watch')
+        page2.onclick=function()
+        {
+            location.href=("/jsProject/watch-page.html")
+        }
+        var page3=document.getElementById('form')
+        page3.onclick=function()
+        {
+            location.href=("/jsProject/multi-step-form.html")
+        }
+    </script>
+</body>
+</html>

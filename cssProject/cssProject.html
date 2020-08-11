@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final CSS Project</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/89ce51601c.js" crossorigin="anonymous"></script>
+        <style>
+            body
+            {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;        }
+            header
+            {
+                font-size: 14px;
+                font-weight: 600;
+                background-color: white;
+                height: 77px;
+                position: sticky;
+                top: 0;
+                z-index: 9;
+            }
+            #sec1 div img
+            {
+                width: 40px;
+                padding-top: 18px;
+                padding-left: 27px;
+            }
+            .caret
+            {
+                width: 0px;
+                height: 0px;
+                display: inline-block;
+                border: 5px solid transparent;
+                transform: translateY(3px);
+            }
+            .caret.down
+            {
+                border-top-color: black;
+            }
+            #menu
+            {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                transform: translate(-20px,-45px);
+            }
+            .menu-items
+            {
+                padding-left: 20px;
+                padding-right: 24px;
+                cursor: pointer;
+            }
+            #menu-button
+            {
+                margin-top: 8px;
+                width: 122px;
+                height: 30px;
+                margin-right: 24px;
+                border: 0;
+                color: white;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;            
+                font-size: 12px;
+                border-radius: 3px;
+                background-color: rgb(170, 210, 54);
+            }
+            #menu-button:hover
+            {
+                color: rgb(170, 210, 54);
+                background-color: white;
+                border: 0.5px solid lightgray;
+            }
+            #sec2
+            {
+                overflow: hidden;
+                background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+                height: 100vh;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #sec2 h1
+            {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+                font-size: 44px;
+                max-width: 1100px;
+                line-height: 1.2;
+                letter-spacing: 8.8px;
+            }
+            #sec2 p
+            {
+                font-size: 14px;
+                letter-spacing: 1px;
+                opacity: 0.5;
+            }
+            #sec3
+            {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                height: auto;
+            }
+            #sec3 p
+            {
+                font-family: 'Poppins', sans-serif;            
+            }
+            #sec3 i
+            {
+                font-size: 95px;
+            }
+            #sec3 i:hover
+            {
+                transform: scale(1.1);
+            }
+            #sec3 div
+            {
+                width: 25vw;
+                padding: 40px;
+                padding-top: 100px;
+              overflow: hidden;
+            }
+            #sec3 div:first-of-type
+            {
+                background-color: #5acda6;
+                color: white;
+            }
+            #sec3 div:nth-of-type(2)
+            {
+                background-color: #91ac41;
+                color: white;
+            }
+            #sec3 div:nth-of-type(3)
+            {
+                background-color: #e4b476;
+                color: white;
+            }
+            #sec3 div:last-of-type
+            {
+                background-color: #ff69da;
+                color: white;
+            }
+            @media screen and (max-width: 600px)
+            {
+                .menu-items
+                {
+                    display: none;
+                }
+                #menu-button
+                {
+                    margin-top: 5px;
+                    margin-right: 10px;
+                }
+                #sec2
+                {
+                    overflow: hidden;
+                    height: 90vh;
+                    background-size: 100vh 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                #sec2 div
+                {
+                    margin-top: 95px;
+                }
+                #sec2 h1
+                {
+                    font-size: 30px;
+                }
+                #sec3
+                {
+                    flex-direction: column;
+                }
+                #sec3 div
+                {
+                    width: 100%;
+                    padding-right: 0;
+                    padding-left: 0;
+                  overflow: visible;
+                }
+            }
+            #sec4
+            {
+                background-color: #f7eee2;
+                height: 750px;
+                text-align: center;
+            }
+            #sec4>p
+            {
+                margin: 0;
+                font-family: 'Caveat', cursive;
+                color: #91ac41;
+                font-size: 24px;
+                padding-top: 100px;
+            }
+            #sec4 h1
+            {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;            
+                font-size: 44px;
+            }
+            #sec4 p:nth-last-of-type(1)
+            {
+                padding-top: 10px;
+                font-family: 'Poppins', sans-serif;
+                color: #8b8b99;
+                font-size: 16px;
+                font-weight: 500;
+                word-spacing: 1px;
+                letter-spacing: 0.3px;
+            }
+            #sec4 aside
+            {
+                margin: 60px;
+                margin-top: 66px;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                text-align: center;
+            }
+            #sec4 i
+            {
+                width: 140px;
+                height: 140px;
+                padding-top: 42px;
+                box-sizing: border-box;
+                border-radius: 70px;
+                font-size: 60px;
+                color: white;
+                background-color: #e3b375;
+            }
+            #sec4 i:hover
+            {
+                transform: scale(1.1);
+            }
+            #sec4 aside div
+            {
+                width: 250px;
+                padding: 20px;
+            }
+            @media screen and (max-width: 600px)
+            {
+                #sec4
+                {
+                    /* margin-top: 1200px; */
+                    height: auto;
+                    padding: 0 10px;
+                }
+                #sec4 aside
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+            #sec5
+            {
+                height: auto;
+                text-align: center;
+                text-align: center;
+            }
+            #sec5>p
+            {
+                width: 700px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+                font-family: 'Caveat', cursive;
+                color: #91ac41;
+                font-size: 24px;
+                padding-top: 100px;
+            }
+            #sec5 h1
+            {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;            
+                font-size: 44px;
+            }
+            #sec5 p:nth-last-of-type(1)
+            {
+                padding-top: 10px;
+                font-family: 'Poppins', sans-serif;
+                color: #8b8b99;
+                font-size: 16px;
+                font-weight: 500;
+                word-spacing: 1px;
+                letter-spacing: 0.3px;
+            }
+            #sec5 img
+            {
+                margin-top: 40px;
+                width: 80px;
+                border-radius: 50%;
+                margin-bottom: 25px;
+            }
+            #sec5 aside
+            {
+                margin: 60px;
+                margin-top: 66px;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                text-align: center;
+            }
+            #sec5 aside div
+            {
+                margin: 15px;
+                background-color: #f5f6fb;
+                width: 400px;
+                height: auto;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-top-left-radius: 45px;
+                border-bottom-right-radius: 45px;
+                border-bottom-left-radius: 45px;
+            }
+            #sec5 aside div:hover
+            {
+                box-shadow: 0px 0px 7px 10px #f5f6fb;
+            }
+            #sec5 div p
+            {
+                font-family: 'Poppins', sans-serif;
+                color: #8b8b99;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 500;
+                word-spacing: 1px;
+                letter-spacing: 0.3px;
+                margin: 0;
+            }
+            #sec5 div h4
+            {
+                margin-bottom: 0;
+            }
+            @media screen and (max-width: 600px)
+            {
+                #sec5>p
+                {
+                    width: 300px;
+                    padding-top: 0;
+                }
+                #sec5 aside
+                {
+                    margin: 20px;
+                    margin-top: 0;
+                    flex-direction: column;
+                }
+                #sec5 aside div
+                {
+                    margin: 0;
+                    margin-bottom: 20px;
+                    width: 300px;
+                }
+            }
+            #sec6
+            {
+                display: flex;
+                flex-direction: row;
+            }
+            #sec6 div img
+            {
+                width: 66.1vw;
+                height: auto;
+            }
+            #sec6 div:last-of-type
+            {
+                background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+                background-repeat: no-repeat;
+                padding-left: 112px;
+                padding-right: 140px;
+                overflow: hidden;
+            }
+            #sec6 div:last-of-type h1
+            {
+                margin-top: 123px;
+                font-size: 40px;
+            }
+            #sec6 div p
+            {
+                font-family: 'Poppins', sans-serif;
+                color: #8b8b99;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            #sec6 div input:first-of-type
+            {
+                width: 100%;
+                border: none;
+                font-family: 'Poppins', sans-serif;
+                border-radius: 8px;
+                font-size: 16px;
+                padding: 10px;
+                margin-top: 30px;
+                outline: none;
+            }
+            #sec6 div input:last-of-type
+            {
+                margin-top: 15px;
+                background-color: #f69dad;
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                font-weight: 700;
+                width: 160px;
+                height: 50px;
+                border: none;
+                border-radius: 8px;
+                margin-bottom: 100px;
+                outline: none;
+            }
+            #sec6 div input:last-of-type:hover
+            {
+                background-color: transparent;
+                border: 1px solid #f69dad;
+                color: #f69dad;
+            }
+            @media screen and (max-width: 600px)
+            {
+                #sec6
+                {
+                    margin-top: 0;
+                    flex-direction: column;
+                    text-align: justify;
+                }
+                #sec6 div img
+                {
+                    width: 100vw;
+                }
+                #sec6 div:last-of-type
+                {
+                    padding: 10px;
+                    background-size: 370px;
+                }
+                #sec6 div:last-of-type h1
+                {
+                    margin-top: 23px;
+                    font-size: 28px;
+                }
+                #sec6 div input:last-of-type
+                {
+                    height: 50px;
+                    margin-bottom: 50px;
+                }
+            }
+            #sec7
+            {
+                background-color: #f6fcfa;
+            }
+            #sec7 aside
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+            }
+            #sec7 aside div
+            {
+                margin: 10px;
+                margin-left: 70px;
+                margin-right: 70px;
+            }
+            #sec7 h1
+            {
+                font-family: 'Poppins', sans-serif;
+                font-size: 50px;
+                margin-bottom: 0;
+                margin-top: 89px;
+            }
+            #sec7 p
+            {
+                font-family: 'Poppins', sans-serif;
+                color: #57e3b5;
+                margin-top: 0;
+                margin-bottom: 85px;
+                font-size: 14px;
+                font-style: italic;
+            }
+            @media screen and (max-width: 600px)
+            {
+                #sec7 aside
+                {
+                    flex-direction: column;
+                    padding: 100px 130px;
+                }
+                #sec7 aside div
+                {
+                    margin: 0;
+                }
+                #sec7 h1
+                {
+                    font-size: 40px;
+                    margin-top: 0;
+                }
+                #sec7 p
+                {
+                    margin-bottom: 0;
+                }
+            }
+            #sec8
+            {
+                text-align: center;
+            }
+            #sec8 h1
+            {
+                font-family: 'Poppins', sans-serif;
+                color: #998b8b;
+                font-size: 45px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            #sec8 svg
+            {
+                width: 100px;
+                height: 1px;
+            }
+            #sec8 iframe
+            {
+                margin-top: 20px;
+            }
+            @media screen and (max-width: 600px)
+            {
+                #sec8 iframe
+                {
+                    width: 100%;
+                }
+            }
+            #sec9 aside
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 60px;
+                padding-right: 15px;
+            }
+            #sec9 div
+            {
+                width: 600px;
+            }
+            #sec9 h1
+            {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 40px;
+                font-weight: 900;
+            }
+            #sec9 h3
+            {
+                font-size: 24px;
+            }
+            #sec9 p
+            {
+                color: #998b8b;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+                line-height: 0.5;
+            }
+            #sec9 aside div p:nth-of-type(2)
+            {
+                line-height: 1.2;
+            }
+            #sec9 aside div p:first-of-type
+            {
+                font-family: 'Caveat', cursive;
+                color: #91ac41;
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+            #sec9 aside div:first-of-type
+            {
+                margin-right: 100px;
+            }
+            #sec9 aside div:last-of-type
+            {
+                padding-right: 0;
+            }
+            #sec9 input
+            {
+                font-size: 16px;
+                padding: 10px;
+                width: 90%;
+                height: 40px;
+                margin: 10px;
+                margin-left: 0;
+                border: 1px solid rgb(212, 209, 209);
+                border-radius: 6px;
+                outline: none;
+            }
+            #sec9 input:nth-of-type(5)
+            {
+                padding-top: 0;
+            }
+            #sec9 input:last-of-type
+            {
+                width: 170px;
+                background-color: #aad236;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                padding-bottom: 35px;
+            }
+            #sec9 input:nth-of-type(5)
+            {
+                height: 60px;
+            }
+            @media screen and (max-width: 600px)
+            {
+                #sec9 aside
+                {
+                    flex-direction: column;
+                    padding: 0;
+                    padding-left: 15px;
+                }
+                #sec9 div
+                {
+                    width: 100%;
+                }
+            }
+            #sec10
+            {
+                font-size: 14px;
+                word-spacing: 1px;
+                padding-top: 17px;
+                height: 60px;
+                text-align: center;
+                background-color: rgb(41, 39, 39);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+            #demo
+            {
+                background-color: white;
+                width: 180px;
+                padding-bottom: 10px;
+                padding-left: 30px;
+                padding-top: 0;
+                position: absolute;
+                right:400px;
+                top: 38px;
+                box-shadow: 0px 0px 7px 0.5px gray;
+                border-radius: 2px;
+                display: none;
+            }
+            header div svg
+            {
+                height: 1px;
+            }
+            header div svg:first-of-type
+            {
+                position: relative;
+                top: -13px;
+                height: 4px;
+                left: -30px;
+            }
+            .demo-p
+            {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+            #demo-hover:hover + #demo
+            {
+                display: block;
+                cursor: pointer;
+            }
+            #demo:hover
+            {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <aside style="width: 100px; position: fixed;top: 100px; cursor: pointer; z-index: 9;">
+            <a href="../index.html">
+                <img style="width: 100px; background-color: white;" src="https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png" alt="home">
+            </a>
+        </aside>
+        <header>
+            <section id="sec1">
+                <div>
+                <img src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg"
+                alt="logo" id="logo"/></div>
+                <div id="menu">
+                    <p id="demo-hover" class="menu-items">Demo Pages <span class="caret down"></span>
+                        <div id="demo">
+                            <svg>
+                                <line x1='0' y1='0' x2='210' y2='0'
+                                stroke="#aad236" stroke-width="155px"/>
+                            </svg>
+                            <p class="demo-p">Menu Item 1</p>
+                            <svg>
+                                <line x1='0' y1='0' x2='150' y2='0'
+                                stroke="rgb(196, 196, 196)" stroke-width="2px"/>
+                            </svg>
+                            <p class="demo-p">Menu Item 2</p>
+                            <svg>
+                                <line x1='0' y1='0' x2='150' y2='0'
+                                stroke="rgb(196, 196, 196)" stroke-width="2px"/>
+                            </svg>
+                            <p class="demo-p">Menu Item 3</p>
+                        </div>
+                    </p>
+    
+                    <p class="menu-items">Watch Video</p>
+                    <p class="menu-items">Blocks <span class="caret down"></span></p>
+                    <button id="menu-button">BUY NOW</button>
+                </div>
+            </section>
+    
+        </header>
+        <section id="sec2">
+            <div>
+            <h1>Vegan Store Simple Website</h1><h1>Template</h1>
+            <br>
+            <p>With nutrition, all the vital functions of the body are connected. It is the source 
+                of the development of tissues and cells, their constant renewal, the<br> saturation of man with energy.</p>
+            </div>
+        </section>
+        <section id="sec3">
+            <div>
+                <i class="fas fa-cut"></i>
+                <h2>Step 01.</h2>
+                <p>Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, 
+                    various acids, vitamins and active elements in the form, easy for digestion.</p>
+            </div>
+            <div>
+                <i class="fas fa-paint-brush"></i>
+                <h2>Step 02.</h2>
+                <p>Fresh tomatoes are ideal for replenishing the loss of minerals. These vegetables contain a lot of acids that our body needs for full-fledged work.</p>
+            </div>
+            <div>
+                <i class="fas fa-shopping-bag"></i>
+                <h2>Step 03.</h2>
+                <p>
+                    In the content of vitamin C, sweet peppers are superior to lemons and even black currants! The greatest amount 
+                    of vitamin is contained around the stalk, that is, in the part of the product that is usually cut during cleaning.
+                </p>
+            </div>
+            <div>
+                <i class="far fa-smile"></i>
+                <h2>Step 04.</h2>
+                <p>
+                    If you sometimes eat hot chili peppers, this will help normalize cerebral circulation, 
+                    ease the condition with bronchial asthma, cough, sore throat, flu.
+                </p>
+            </div>
+        </section>
+        <section id="sec4">
+            <p>Fresh Food</p>
+            <h1>Our Vegan Store!</h1>
+            <p>Radish contains a lot of fiber, pectin and mineral salts.</p>
+            <aside>
+                <div>
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                    <h2>Fresh Vegetables</h2>
+                    <p>Use for cooking several types of vegetable oil.</p>
+                </div>
+                <div>
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    <h2>High Quality</h2>
+                    <p>This is the best source of essential fatty acids for the body.</p>
+                </div>
+                <div>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <h2>Sale</h2>
+                    <p>It is very good, if in the kitchen there will always be several bottles with different oils.</p>
+                </div>
+                <div>
+                    <i class="fa fa-weixin" aria-hidden="true"></i>
+                    <h2>Best Price</h2>
+                    <p>Remember that unrefined oils are not suitable for heat treatment.</p>
+                </div>
+            </aside>
+        </section>
+        <section id="sec5">
+            <p>Fresh Food</p>
+            <h1>Our Vegan Shop!</h1>
+            <p>According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating.</p>
+            <aside>
+                <div>
+                    <img src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg"
+                    alt="cook"/>
+                    <p>Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. 
+                        The staff shows that they completely share the philosophy of proper nutrition, if you can say so.</p>
+                    <h4>VERONICA KING</h4>
+                    <p>Cook</p>
+                </div>
+                <div>
+                    <img src="https://mobirise.com/extensions/organicamp/assets/images/face6.jpg"
+                    alt="seller"/>
+                    <p>The assortment is very wide. From useful organic oils, cereals and teas to specific products for vegetarians, such as sausages and pies without meat.</p>
+                    <h4>JIM CASH</h4>
+                    <p>Seller</p>
+                </div>
+                <div>
+                    <img src="https://mobirise.com/extensions/organicamp/assets/images/face7.jpg"
+                    alt="manager"/>
+                    <p>I want to say a huge thank you to the management of the store and all its employees, I'm not a vegetarian, 
+                        it would seem that the store is not for me, but it's not so, any person who comes here will find something useful.</p>
+                    <h4>PETER GOODMAN</h4>
+                    <p>Manager</p>
+                </div>
+            </aside>
+        </section>
+        <section id="sec6">
+            <div>
+                <img src="https://mobirise.com/extensions/organicamp/assets/images/19.jpg"
+                alt="strawberry"/>
+            </div>
+            <div>
+                <h1>Follow Us</h1>
+                <p>A wide range of products; many unusual and tasty products; courteous staff.</p>
+                <form>
+                    <input type="email" placeholder="Your Email"><br>
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+        </section>
+        <section id="sec7">
+            <aside>
+                <div>
+                    <h1>7</h1>
+                    <p>Year of experiences</p>
+                </div>
+                <div>
+                    <h1>123k</h1>
+                    <p>Happy Customers</p>
+                </div>
+                <div>
+                    <h1>72k</h1>
+                    <p>100% Satisfaction</p>
+                </div>
+                <div>
+                    <h1>13k</h1>
+                    <p>Detox Smoothies</p>
+                </div>
+            </aside>
+        </section>
+        <section id="sec8">
+            <h1>Vimeo Video</h1>
+            <div>
+                <svg>
+                    <line x1='10' y1='0' x2='1000' y2='0'
+                    stroke="#f69dad" stroke-width="2px"/>
+                </svg>
+            </div>
+            <iframe width="750" height="450" frameborder="0" allowfullscreen="" src="https://player.vimeo.com/video/275412279"></iframe>
+            </video>
+        </section>
+        <section id="sec9">
+            <aside>
+                <div>
+                    <p>Contact Us</p>
+                    <h1>Address Information</h1>
+                    <p>Overeating is one of the most common causes of overweight and digestive problems.</p>
+                    <h3>London Store</h3>
+                    <p>Roeterseiland Campus Building E</p>
+                    <p>6th floor London</p>
+                    <p>Monday to Friday : 9am to 8pm</p>
+                    <p>examplemail.mail.com</p>
+                    <h3>Berlin Store</h3>
+                    <p>Roeterseiland Campus Building E</p>
+                    <p>6th floor London</p>
+                    <p>Monday to Friday : 9am to 8pm</p>
+                    <p>examplemail.mail.com</p>
+                </div>
+                <div>
+                    <p>Meet Our Team</p>
+                    <h1>Get In Touch</h1>
+                    <p>The task of proper nutrition - to remove from the diet harmful food and enrich it useful.</p>
+                    <form>
+                        <input type="text" name="name" placeholder="Name"><br>
+                        <input type="text" name="phone" placeholder="Phone"><br>
+                        <input type="text" name="Subject" placeholder="Subject"><br>
+                        <input type="email" name="email" placeholder="E-mail"><br>
+                        <input type="text" name="message" placeholder="Message"><br>
+                        <input type="submit" value="SUBMIT NOW">
+                    </form>
+                </div>
+            </aside>
+        </section>
+        <section id="sec10">
+            <p>&#169 Copyright 2018 Mobirise - All Rights Reserved</p>
+        </section>
+    </body>
+    </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/jsProject/multi-step-form.js"></script>
+    <style>
+        body
+        {
+            margin: 0;
+            background-color: rgb(102, 180, 228);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        h1
+        {
+            font-family: 'Fredoka One', cursive;
+            font-size: 70px;
+            text-shadow:0px 0px 5px black;
+            padding-top: 20px;
+            text-align: center;
+            color: rgb(233, 233, 27);
+        }
+        #home
+        {
+            display: block;
+            font-size: 20px;
+            margin-left: 20px;
+            padding-top: 20px;
+            color: rgb(233, 233, 27);
+        }
+        div
+        {
+            width: 100%;
+            max-width: 500px;
+            background-color: rgb(47, 47, 66);
+            color: white;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        fieldset {
+            border: 1px solid white;
+            padding: 50px 50px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        fieldset p
+        {
+            margin-top: 40px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        input
+        {
+            width: 100%;
+            max-width: 370px;
+            font-size: 20px;
+            border-radius: 6px;
+            outline: none;
+            padding: 10px;
+        }
+        button
+        {
+            float: right;
+            width: 100px;
+            margin-top: 30px;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: rgb(233, 233, 27);
+            outline: none;
+            cursor: pointer;
+        }
+        input:first-of-type
+        {
+            position: relative;
+        }
+        .errname
+        {
+            margin-top: 5px;
+            position: absolute;
+            color: red;
+            font-size: 16px;
+            display: none;
+        }
+        #step1
+        {
+            display: block;
+        }
+        /* step2 */
+        #legend2
+        {
+            text-align: center;
+        }
+        #btnPrevstep2, #btnPrevstep3
+        {
+            float: left;
+            width: 150px;
+        }
+        #step2
+        {
+            display: none;
+        }
+        #step3
+        {
+            display: none;
+        }
+        /* step3 */
+        #legend3
+        {
+            text-align: right;
+        }
+        select, textarea
+        {
+            width: 100%;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 6px;
+            box-sizing: border-box;
+            outline: none;
+            background-color: white;
+        }
+        /* step4 */
+        #step4
+        {
+            text-align: center;
+            padding: 150px 100px;
+            font-size: 18px;
+            color: rgb(233, 233, 27);
+            letter-spacing: 1px;
+            line-height: 1.5;
+            box-sizing: border-box;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a id="home" href="/jsProject/final-js-project.html">Back to Home</a>
+    <h1>The Multi-Step Form</h1>
+    <main>
+        <div id="step1">
+            <fieldset>
+                <legend>Step: 1</legend>
+                <p>First Name*</p>
+                <input id="firstname" type="text" name="firstName" placeholder="First Name"/>
+                <p id="fnameID" class="errname">Please enter a valid Name i.e, (without symbols and numbers).</p>
+                <p id="fnameempty" class="errname">This field cannot be empty</p>
+                <p>Last Name</p>
+                <input type="text" name="lastName" placeholder="Last Name"/>
+                <p>Email*</p>
+                <input id="mail" type="email" name="mail" placeholder="Email"/>
+                <p id="mailID" class="errname">Please enter a valid mail id. Ex: yourMail@gmail.com</p>
+                <p id="mailempty" class="errname">This field cannot be empty</p>
+                <br>
+                <button id="btnstep1" type="button">NEXT</button>
+            </fieldset>
+        </div>
+        <div id="step2">
+            <fieldset>
+                <legend id="legend2">Step: 2</legend>
+                <p>Contact*</p>
+                <input id="contact" type="text" name="contact" placeholder="Contact"/>
+                <p id="contactID" class="errname">Please enter a valid Number including country code ex:(+91)</p>
+                <p id="contactempty" class="errname"> This field cannot be empty</p>
+                <p>City</p>
+                <input type="text" name="City" placeholder="City"/>
+                <p>Country*</p>
+                <input id="country" type="text" name="Country" placeholder="Country"/>
+                <p id="countryID" class="errname">Please enter a valid Country Name</p>
+                <p id="countryempty" class="errname">This field cannot be empty</p>
+                <br>
+                <button id="btnstep2" type="button">NEXT</button>
+                <button id="btnPrevstep2" type="button">PREVIOUS</button>
+            </fieldset>
+        </div>
+        <div id="step3">
+            <fieldset>
+                <legend id="legend3">Step: 3</legend>
+                <p>Enrolled Program*</p>
+                <select id="select" name="programs">
+                    <option value="option">-Selected Program-</option>
+                    <option value="full-stack">Full-Stack Developer</option>
+                    <option value="django">Django Developer</option>
+                    <option value="data-scientist">Data Scientist</option>
+                </select>
+                <p id="selectID" class="errname">Select One Program</p>
+                <p>Message*</p>
+                <textarea id="message" name="message" rows="6" cols="30"></textarea>
+                <p id="messageempty" class="errname">This field cannot be empty</p>
+                <br>
+                <button id="btnstep3" type="button">NEXT</button>
+                <button id="btnPrevstep3" type="button">PREVIOUS</button>
+            </fieldset>
+        </div>
+        <div id="step4">
+            <p>Your form has been submitted successfully!</p>
+        </div>
+    </main>
+</body>
+</html>

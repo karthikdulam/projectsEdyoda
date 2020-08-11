@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects World!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            margin: 0;
+            background-color: lightskyblue;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1
+        {
+            font-family: 'Fredoka One', cursive;
+            font-size: 70px;
+            color: rgb(233, 233, 27);
+            text-shadow:0px 0px 5px black;
+            padding-top: 100px;
+            animation: 1s infinite alternate ease-in-out tilt;
+        }
+        @keyframes tilt
+        {
+            0%
+            {
+                transform: rotate(2deg);
+            }
+            100%
+            {
+                transform: rotate(-2deg);
+            }
+        }
+        aside
+        {
+            display: flex;
+            justify-content: center;
+            flex-flow: row-;
+        }
+        div
+        {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            margin: 10px;
+            margin-top: 20vh;
+            border-radius: 8px;
+        }
+        div:nth-of-type(even)
+        {
+            background-color: rgb(21, 21, 59);
+        }
+        div:nth-of-type(odd)
+        {
+            background-color: rgb(233, 233, 27);
+        }
+        div:nth-of-type(odd) p
+        {
+            color: rgb(21, 21, 59);
+        }
+        p
+        {
+            padding-top: 40%;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(233, 233, 27);
+            font-size: 30px;
+            padding-right: 40px;
+            padding-left: 40px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edyoda Projects!!</h1>
+    <aside>
+        <div id="html">
+            <p>HTML Project</p>
+        </div>
+        <div id="css">
+            <p>CSS Project</p>
+        </div>
+        <div id="js">
+            <p>JS Project</p>
+        </div>
+    </aside>
+    <script>
+        var page1=document.getElementById('html')
+        page1.onclick=function()
+        {
+            location.href=("/htmlProject/main-project.html")
+        }
+        var page2=document.getElementById('css')
+        page2.onclick=function()
+        {
+            location.href=("/cssProject/cssProject.html")
+        }
+        var page3=document.getElementById('js')
+        page3.onclick=function()
+        {
+            location.href=("/jsProject/final-js-project.html")
+        }
+    </script>
+</body>
+</html>

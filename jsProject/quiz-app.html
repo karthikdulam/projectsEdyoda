@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        body
+        {
+            margin: 0;
+            background-color: rgb(102, 180, 228);
+            color: rgb(233, 233, 27);
+        }
+        h1
+        {
+            font-family: 'Fredoka One', cursive;
+            font-size: 70px;
+            text-shadow:0px 0px 5px black;
+            padding-top: 20px;
+            text-align: center;
+        }
+        #home
+        {
+            display: block;
+            font-size: 20px;
+            margin-left: 20px;
+            padding-top: 20px;
+            color: rgb(233, 233, 27);
+        }
+        main
+        {
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: left;
+            background-color: rgb(47, 47, 66);
+            border-radius: 8px;
+            padding: 20px 0;
+            margin-bottom: 50px;
+        }
+        input
+        {
+            margin: 20px;
+            margin-right: 10;
+        }
+        ul
+        {
+            list-style-type: none;
+        }
+        pre
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        label
+        {
+            font-size: 20px;
+            height: 32px;
+        }
+        h2
+        {
+            margin-bottom: 0;
+            margin-top: 30px;
+        }
+        /* main ul li p */
+        p
+        {
+            margin: 0;
+            display: inline;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        #btn-div
+        {
+            text-align: center;
+        }
+        #btn
+        {
+            background-color: rgb(233, 233, 27);
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin: 20px;
+            color: rgb(47, 47, 66);
+            font-weight: 800;
+        }
+        #btn:hover
+        {
+            color: white;
+            background-color: transparent;
+            border: 1px solid rgb(233, 233, 27);
+        }
+        #results-div
+        {
+            width: 40%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            position: absolute;
+            position: fixed;
+            top: 30vh;
+            left: 30vw;
+            border-radius: 8px;
+            display: none;
+        }
+        #res-text
+        {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 14vh;
+            cursor: initial;
+        }
+        #results-div h1
+        {
+            text-shadow:0px 0px 2px black;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        form
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        #back
+        {
+            margin-top: 0;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .hidden
+        {
+            display: none;
+        }
+        /* loader */
+
+        #loader
+        {
+            border: 1.6rem solid white;
+            border-radius: 50%;
+            border: 1rem dotted rgb(47, 47, 66);
+            width: 8rem;
+            height: 8rem;
+            animation: spin 1.5s linear infinite;
+            position: absolute;
+            position: fixed;
+            top: 40vh;
+            left: 45vw;
+        }
+        @keyframes spin
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+        }
+        li
+        {
+            padding-bottom: 30px;
+            margin-right: 30px;
+            border-bottom: 1px solid rgb(233, 233, 27);
+        }
+        @media screen and (max-width: 600px)
+        {
+            main
+            {
+                width: 90%;
+            }
+            #loader
+            {
+                left: 30vw;
+            }
+            h1
+            {
+                font-size: 50px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <a id="home" href="/jsProject/final-js-project.html">Back to Home</a>
+    <h1>The Quiz App</h1>
+    <div id="loader"></div>
+    <main id="main" class="hidden">
+        <ul>
+            <li>
+                <h2 id="qn1">q1</h2>
+                <form name="form1">
+                    <label><input type="radio" name="q1" value="1"><p class="choices1" data-number="1">choicing</p></label>
+                    <label><input type="radio" name="q1" value="2"><p class="choices1" data-number="2">choicing</p></label>
+                    <label><input type="radio" name="q1" value="3"><p class="choices1" data-number="3">choicing</p></label>
+                    <label><input type="radio" name="q1" value="4"><p class="choices1" data-number="4">choicing</p></label>
+                </form>
+            </li>
+            <li>
+                <h2 id="qn2">q2</h2>
+                <form name="form2">
+                    <label><input type="radio" name="q2" value="1"><p class="choices2" data-number="1">choicing</p></label>
+                    <label><input type="radio" name="q2" value="2"><p class="choices2" data-number="2">choicing</p></label>
+                    <label><input type="radio" name="q2" value="3"><p class="choices2" data-number="3">choicing</p></label>
+                    <label><input type="radio" name="q2" value="4"><p class="choices2" data-number="4">choicing</p></label>
+                </form>
+            </li>
+            <li>
+                <h2 id="qn3">q3</h2>
+                <form name="form3">
+                    <label><input type="radio" name="q3" value="1"><p class="choices3" data-number="1">choicing</p></label>
+                    <label><input type="radio" name="q3" value="2"><p class="choices3" data-number="2">choicing</p></label>
+                    <label><input type="radio" name="q3" value="3"><p class="choices3" data-number="3">choicing</p></label>
+                    <label><input type="radio" name="q3" value="4"><p class="choices3" data-number="4">choicing</p></label>
+                </form>
+            </li>
+            <li>
+                <h2 id="qn4">q3</h2>
+                <form name="form4">
+                    <label><input type="radio" name="q4" value="1"><p class="choices4" data-number="1">choicing</p></label>
+                    <label><input type="radio" name="q4" value="2"><p class="choices4" data-number="2">choicing</p></label>
+                    <label><input type="radio" name="q4" value="3"><p class="choices4" data-number="3">choicing</p></label>
+                    <label><input type="radio" name="q4" value="4"><p class="choices4" data-number="4">choicing</p></label>
+                </form>
+            </li>
+            <li>
+                <h2 id="qn5">q5</h2>
+                <form name="form5">
+                    <label><input type="radio" name="q5" value="1"><p class="choices5" data-number="1">choicing</p></label>
+                    <label><input type="radio" name="q5" value="2"><p class="choices5" data-number="2">choicing</p></label>
+                    <label><input type="radio" name="q5" value="3"><p class="choices5" data-number="3">choicing</p></label>
+                    <label><input type="radio" name="q5" value="4"><p class="choices5" data-number="4">choicing</p></label>
+                </form>
+            </li>
+        </ul>
+        <div id="btn-div">
+            <button type="submit" id="btn">Submit</button>
+        </div>
+        <div id="results-div">
+            <p id="res-text">Your Result:</p>
+            <h1 id="result-text"></h1>
+            <p id="back">BACK</p>
+        </div>
+    </main>
+    <script src="/jsProject/quiz-app.js"></script>
+</body>
+</html>

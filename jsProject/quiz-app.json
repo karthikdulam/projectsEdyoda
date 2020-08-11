@@ -1,0 +1,42 @@
+[
+    {
+        "question": "Who is Gajula Ajay Kumar?",
+        "choice1": "waste fellow",
+        "choice2": "nasty fellow",
+        "choice3":"pulihora guy",
+        "choice4": "All the above",
+        "answer": 4
+    },
+    {
+        "question": "choose one Quality about Karthik Dulam?",
+        "choice1":"Mr. Perfect",
+        "choice2":"Intelligent",
+        "choice3": "Smart",
+        "choice4": "Hansome",
+        "answer": 1
+    },
+    {
+        "question": "Which brand does lakkidi like?",
+        "choice1": "KF",
+        "choice2": "Knock Out",
+        "choice3":"Budwiser",
+        "choice4": "Breezer",
+        "answer": 3
+    },
+    {
+        "question": "Is Akhil love Girls?",
+        "choice1": "Girls only love akhil",
+        "choice2": "he loves everyone",
+        "choice3": "I dont know",
+        "choice4": "Ask him",
+        "answer": 1
+    },
+    {
+        "question": "color of SKY?",
+        "choice1": "Rainbow color",
+        "choice2": "Red",
+        "choice3": "Light Blue",
+        "choice4": "black",
+        "answer": 3
+    }
+]
