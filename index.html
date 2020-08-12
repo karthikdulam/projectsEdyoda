@@ -114,10 +114,30 @@
         {
             animation: alternate infinite movejs 1.7s;
         }
+        h3
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 24px;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        @media screen and (max-width: 800px) {
+            aside, div, h1
+            {
+                display: none;
+            }
+            h3
+            {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Edyoda Projects!!</h1>
+    <h3>Please open windows/Desktop mode</h3>
     <aside id="aside">
         <div id="html">
             <p>HTML Project</p>
