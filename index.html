@@ -9,72 +9,116 @@
         body
         {
             margin: 0;
-            background-color: lightskyblue;
+            background-image: url('https://sb.ecobnb.net/app/uploads/sites/3/2018/04/paul-trienekens-419330-unsplash.jpg');
+            background-size: cover;
             text-align: center;
             overflow: hidden;
+            margin: 0 15%;
         }
         h1
         {
             font-family: 'Fredoka One', cursive;
-            font-size: 70px;
-            color: rgb(233, 233, 27);
-            text-shadow:0px 0px 5px black;
+            font-size: 30px;
             padding-top: 100px;
-            animation: 1s infinite alternate ease-in-out tilt;
+            position: absolute;
+            left: 40%;
+            animation: 2s infinite ease-in-out rotate;
         }
-        @keyframes tilt
+        @keyframes rotate
         {
             0%
             {
-                transform: rotate(2deg);
+                transform: scale(0);
             }
             100%
             {
-                transform: rotate(-2deg);
+                transform: scale(1.5);
             }
-        }
-        aside
-        {
-            display: flex;
-            justify-content: center;
-            flex-flow: row-;
         }
         div
         {
-            width: 300px;
-            height: 300px;
+            width: 150px;
+            height: 150px;
             background-color: white;
-            margin: 10px;
-            margin-top: 20vh;
-            border-radius: 8px;
-        }
-        div:nth-of-type(even)
-        {
-            background-color: rgb(21, 21, 59);
-        }
-        div:nth-of-type(odd)
-        {
-            background-color: rgb(233, 233, 27);
-        }
-        div:nth-of-type(odd) p
-        {
-            color: rgb(21, 21, 59);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 10vh;
+            background-image: url('/ball.png');
+            background-size: cover;
+            opacity: 0.7;
+            z-index: 9;
         }
         p
         {
-            padding-top: 40%;
             font-family: 'Montserrat', sans-serif;
-            color: rgb(233, 233, 27);
             font-size: 30px;
-            padding-right: 40px;
-            padding-left: 40px;
             font-weight: 600;
+        }
+        section
+        {
+            display: flex;
+        }
+        @keyframes movehtml
+        {
+            0%
+            {
+                transform: translate();
+            }
+            100%
+            {
+                transform: translate(0, -300%);
+                box-shadow: 10px 10px 5px #aaaaaa;
+            }
+        }
+        @keyframes movecss
+        {
+            0%
+            {
+                transform: translate();
+            }
+            100%
+            {
+                transform: translate(0, -300%);
+            }
+        }
+        @keyframes movejs
+        {
+            0%
+            {
+                transform: translate();
+            }
+            100%
+            {
+                transform: translate(0, -300%);
+            }
+        }
+        #aside
+        {
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        #html
+        {
+            animation: alternate infinite movejs 1.5s;
+        }
+        #css
+        {
+            animation: alternate infinite movejs 1s;
+        }
+        #js
+        {
+            animation: alternate infinite movejs 1.7s;
         }
     </style>
 </head>
 <body>
     <h1>Edyoda Projects!!</h1>
-    <aside>
+    <aside id="aside">
         <div id="html">
             <p>HTML Project</p>
         </div>
