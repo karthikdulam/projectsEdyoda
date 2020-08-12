@@ -29,7 +29,7 @@ $(document).ready(function() {
     };
 
     // $.get('https://5d76bf96515d1a0014085cf9.mockapi.io/playlist', (data) => {
-    $.get('/jsProject/watch-page-thumbnails.json', (data) => {
+    $.get('/projectsEdyoda/jsProject/watch-page-thumbnails.json', (data) => {
         data.map ((item, pos) => {
             $('#side-list').append(createSidelist(item, pos));
         })
