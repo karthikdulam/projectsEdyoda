@@ -38,14 +38,16 @@ let questions = [];
 //     console.log(err);
 // })
 
-fetch("/jsProject/quiz-app.json").then(res => {
-    return res.json();
-}).then(loadedQuestions => {
-    questions = loadedQuestions;
-    startGame();
-}).catch(err => {
-    console.log(err);
-})
+setTimeout( () => {
+    fetch("/projectsEdyoda/jsProject/quiz-app.json").then(res => {
+        return res.json();
+    }).then(loadedQuestions => {
+        questions = loadedQuestions;
+        startGame();
+    }).catch(err => {
+        console.log(err);
+    })
+},3000)
 
 // CONSTANTS
 const CORRECT_BONUS = 1;
