@@ -1,39 +1,39 @@
 [
     {
-        "question": "Who is Gajula Ajay Kumar?",
-        "choice1": "waste fellow",
-        "choice2": "nasty fellow",
-        "choice3":"pulihora guy",
-        "choice4": "All the above",
+        "question": "Sun Rises at ______?",
+        "choice1": "Top",
+        "choice2": "Down",
+        "choice3":"West",
+        "choice4": "East",
         "answer": 4
     },
     {
-        "question": "choose one Quality about Karthik Dulam?",
-        "choice1":"Mr. Perfect",
-        "choice2":"Intelligent",
-        "choice3": "Smart",
-        "choice4": "Hansome",
+        "question": "Who Killed Baahubali?",
+        "choice1":"You",
+        "choice2":"Your Friend",
+        "choice3": "Kattappa",
+        "choice4": "Rajamouli",
         "answer": 1
     },
     {
-        "question": "Which brand does lakkidi like?",
-        "choice1": "KF",
-        "choice2": "Knock Out",
-        "choice3":"Budwiser",
-        "choice4": "Breezer",
+        "question": "Does Earth exists?",
+        "choice1": "Don't know",
+        "choice2": "Phone a friend",
+        "choice3":"Audience pole",
+        "choice4": "50 50",
+        "answer": 2
+    },
+    {
+        "question": "CSS stands for?",
+        "choice1": "Custom Styles for Screen",
+        "choice2": "Computer Screening Styles",
+        "choice3": "Cascading Style Sheets",
+        "choice4": "None of the above",
         "answer": 3
     },
     {
-        "question": "Is Akhil love Girls?",
-        "choice1": "Girls only love akhil",
-        "choice2": "he loves everyone",
-        "choice3": "I dont know",
-        "choice4": "Ask him",
-        "answer": 1
-    },
-    {
         "question": "color of SKY?",
-        "choice1": "Rainbow color",
+        "choice1": "Yellow",
         "choice2": "Red",
         "choice3": "Light Blue",
         "choice4": "black",
