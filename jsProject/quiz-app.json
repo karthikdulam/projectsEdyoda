@@ -1,29 +1,21 @@
 [
     {
-        "question": "Sun Rises at ______?",
-        "choice1": "Top",
-        "choice2": "Down",
-        "choice3":"West",
-        "choice4": "East",
-        "answer": 4
-    },
-    {
-        "question": "Who Killed Baahubali?",
-        "choice1":"You",
-        "choice2":"Your Friend",
-        "choice3": "Kattappa",
-        "choice4": "Rajamouli",
-        "answer": 1
-    },
-    {
-        "question": "Does Earth exists?",
-        "choice1": "Don't know",
-        "choice2": "Phone a friend",
-        "choice3":"Audience pole",
-        "choice4": "50 50",
+        "question": "React is maintained by ______?",
+        "choice1": "Google",
+        "choice2": "Amazon",
+        "choice3":"Pubg",
+        "choice4": "Facebook",
         "answer": 2
     },
     {
+        "question": "Purpose of <marquee> tag is for_____?",
+        "choice1":"Scrolling",
+        "choice2":"hiding",
+        "choice3": "user inputs",
+        "choice4": "marking elements",
+        "answer": 1
+    },
+        {
         "question": "CSS stands for?",
         "choice1": "Custom Styles for Screen",
         "choice2": "Computer Screening Styles",
@@ -32,11 +24,19 @@
         "answer": 3
     },
     {
-        "question": "color of SKY?",
-        "choice1": "Yellow",
-        "choice2": "Red",
-        "choice3": "Light Blue",
-        "choice4": "black",
+        "question": "CSS used for______?",
+        "choice1": "Adding functionalities",
+        "choice2": "styling web pages",
+        "choice3": "Adding new elements",
+        "choice4": "none of the above",
+        "answer": 2
+    },
+    {
+        "question": "Angular is maintained by ______?",
+        "choice1": "Facebbok",
+        "choice2": "Jio",
+        "choice3": "Google",
+        "choice4": "Amazon",
         "answer": 3
     }
 ]
